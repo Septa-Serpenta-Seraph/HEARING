@@ -73,11 +73,11 @@ CANONICAL = {
         "source": "F1/F4 adopted-design, F2 adopted-design (1500), F3 measured (2770 from original-8 median)",
     },
     "mfcc": {
-        "value": [-254.4, 110.8, -36.1, 17.8, -7.2, 17.3, -18.1,
-                  4.4, -7.4, -7.7, -3.3, -14.4, -11.5],
+        "value": [-237.6, -41.9, 5.3, 26.6, -59.5, 1.6, -15.9,
+                  -25.8, -14.0, -2.8, -32.1, -3.3, -4.0],
         "provenance": "measured",
-        "source": "librosa defaults from ElevenLabs samples — MUST regenerate through HEARING pipeline",
-        "status": "STALE — regenerate with measure_render over original samples",
+        "source": "HEARING measure_render() over 12 synthetic vowel renders (median)",
+        "status": "REGENERATED — through HEARING pipeline (Round 9)",
     },
 }
 
