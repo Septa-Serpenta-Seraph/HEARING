@@ -1,0 +1,81 @@
+{
+  "tests": [
+    {
+      "id": 0,
+      "name": "front-F2 epsilon",
+      "label_a": "design (1750)",
+      "label_b": "reference (2050)",
+      "file_a": "/home/adora/narusya-voice/renders/phase1/\u025b_f2_design_1750.wav",
+      "file_b": "/home/adora/narusya-voice/renders/phase1/\u025b_f2_reference_2050.wav",
+      "timestamp": "2026-11-09T14:46:45.330667",
+      "perceptual_distance": {
+        "mfcc_distance": 0.0181,
+        "formant_distance_hz": 341.8,
+        "formants_a": [
+          594.9,
+          1732.3,
+          3075.3,
+          3970.5
+        ],
+        "formants_b": [
+          632.0,
+          2062.8,
+          3098.3,
+          4046.1
+        ],
+        "brightness_distance_hz": 3.6,
+        "brightness_a_hz": 944.1,
+        "brightness_b_hz": 947.7,
+        "tilt_distance_db_oct": 0.931,
+        "tilt_a_db_oct": -11.212,
+        "tilt_b_db_oct": -12.143,
+        "hnr_distance_db": 2.51,
+        "hnr_a_db": 27.85,
+        "hnr_b_db": 25.34,
+        "roughness_a": 0.0779,
+        "roughness_b": 0.0739,
+        "composite_distance": 0.2331
+      },
+      "listening_result": null
+    },
+    {
+      "id": 1,
+      "name": "front-F2 ae",
+      "label_a": "design (1650)",
+      "label_b": "reference (1920)",
+      "file_a": "/home/adora/narusya-voice/renders/phase1/\u00e6_f2_design_1650.wav",
+      "file_b": "/home/adora/narusya-voice/renders/phase1/\u00e6_f2_reference_1920.wav",
+      "timestamp": "2026-11-09T14:46:46.905901",
+      "perceptual_distance": {
+        "mfcc_distance": 0.0185,
+        "formant_distance_hz": 219.3,
+        "formants_a": [
+          745.2,
+          1706.7,
+          3055.8,
+          3956.2
+        ],
+        "formants_b": [
+          772.3,
+          1919.9,
+          3073.8,
+          3995.8
+        ],
+        "brightness_distance_hz": 30.3,
+        "brightness_a_hz": 1108.9,
+        "brightness_b_hz": 1139.1,
+        "tilt_distance_db_oct": 1.585,
+        "tilt_a_db_oct": -12.146,
+        "tilt_b_db_oct": -10.561,
+        "hnr_distance_db": 0.65,
+        "hnr_a_db": 24.33,
+        "hnr_b_db": 24.97,
+        "roughness_a": 0.0556,
+        "roughness_b": 0.0693,
+        "composite_distance": 0.1882
+      },
+      "listening_result": null
+    }
+  ],
+  "results": []
+}
