@@ -93,14 +93,13 @@ def tilt_distance(path_a, path_b, sr=16000):
     """
     def compute_tilt(path, sr=16000):
         y, sr = librosa.load(path, sr=sr)
-        S = np.abs(librosa.stft(y))
-        freqs = librosa.fft_frequencies(sr=sr)
-        # Fit log-log slope
-        log_freqs = np.log10(freqs[1:] + 1e-10)
-        log_power = np.log10(S[1:].mean(axis=1) + 1e-10)
-        # Linear fit
+        from scipy import signal as scipy_signal
+        freqs, psd = scipy_signal.welch(y, fs=sr, nperseg=1024)
+        mask = (freqs >= 100) & (freqs <= 4000)
+        log_freqs = np.log10(freqs[mask])
+        log_power = np.log10(psd[mask] + 1e-20)
         coeffs = np.polyfit(log_freqs, log_power, 1)
-        return coeffs[0] * 10  # dB/octave approx
+        return coeffs[0] * 10  # dB/octave (matching VOICE convention)
 
     ta = compute_tilt(path_a, sr)
     tb = compute_tilt(path_b, sr)

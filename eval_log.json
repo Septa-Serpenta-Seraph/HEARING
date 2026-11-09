@@ -959,6 +959,294 @@
           "mfcc": 0.25
         }
       }
+    },
+    {
+      "file": "/home/adora/narusya-voice/renders/phase1/\u025b_f2_design_1750.wav",
+      "timestamp": "2026-11-09T15:33:50.623086",
+      "features": {
+        "f0": 190.1,
+        "formants": [
+          594.9,
+          1732.3,
+          3075.3,
+          3970.5
+        ],
+        "hnr": 27.85,
+        "tilt": -18.665,
+        "mfcc": [
+          -196.47,
+          115.35,
+          -21.82,
+          31.16,
+          -51.99,
+          -32.26,
+          -44.42,
+          -23.12,
+          16.53,
+          -3.3,
+          -46.78,
+          -3.05,
+          0.85
+        ],
+        "modulation_roughness_proxy": 0.0779
+      },
+      "scoring": {
+        "component_scores": {
+          "f0": 1.0,
+          "tilt": 0.0,
+          "hnr": 0.0066,
+          "mfcc": 0.959
+        },
+        "composite_score": 0.6515,
+        "weights": {
+          "f0": 0.267,
+          "tilt": 0.2,
+          "hnr": 0.133,
+          "mfcc": 0.4
+        },
+        "include_formants": false
+      },
+      "signature_version": "0.2.0"
+    },
+    {
+      "file": "/home/adora/narusya-voice/renders/phase1/\u025b_f2_reference_2050.wav",
+      "timestamp": "2026-11-09T15:33:50.702693",
+      "features": {
+        "f0": 189.9,
+        "formants": [
+          632.0,
+          2062.8,
+          3098.3,
+          4046.1
+        ],
+        "hnr": 25.34,
+        "tilt": -17.472,
+        "mfcc": [
+          -199.43,
+          117.37,
+          -16.25,
+          40.18,
+          -64.17,
+          -46.43,
+          -28.96,
+          -4.7,
+          -0.18,
+          -21.08,
+          -30.37,
+          10.55,
+          -13.42
+        ],
+        "modulation_roughness_proxy": 0.0739
+      },
+      "scoring": {
+        "component_scores": {
+          "f0": 1.0,
+          "tilt": 0.0,
+          "hnr": 0.0285,
+          "mfcc": 0.9562
+        },
+        "composite_score": 0.6532,
+        "weights": {
+          "f0": 0.267,
+          "tilt": 0.2,
+          "hnr": 0.133,
+          "mfcc": 0.4
+        },
+        "include_formants": false
+      },
+      "signature_version": "0.2.0"
+    },
+    {
+      "file": "/home/adora/narusya-voice/renders/phase1/\u00e6_f2_design_1650.wav",
+      "timestamp": "2026-11-09T15:33:55.261793",
+      "features": {
+        "f0": 190.1,
+        "formants": [
+          745.2,
+          1706.7,
+          3055.8,
+          3956.2
+        ],
+        "hnr": 24.33,
+        "tilt": -16.502,
+        "mfcc": [
+          -176.91,
+          112.14,
+          -45.61,
+          8.06,
+          -57.13,
+          -12.37,
+          -23.46,
+          -16.12,
+          15.17,
+          -4.24,
+          -57.48,
+          -14.65,
+          2.49
+        ],
+        "modulation_roughness_proxy": 0.0556
+      },
+      "scoring": {
+        "component_scores": {
+          "f0": 1.0,
+          "tilt": 0.0,
+          "hnr": 0.0478,
+          "mfcc": 0.958
+        },
+        "composite_score": 0.6566,
+        "weights": {
+          "f0": 0.267,
+          "tilt": 0.2,
+          "hnr": 0.133,
+          "mfcc": 0.4
+        },
+        "include_formants": false
+      },
+      "signature_version": "0.2.0"
+    },
+    {
+      "file": "/home/adora/narusya-voice/renders/phase1/\u00e6_f2_reference_1920.wav",
+      "timestamp": "2026-11-09T15:33:55.346635",
+      "features": {
+        "f0": 190.1,
+        "formants": [
+          772.3,
+          1919.9,
+          3073.8,
+          3995.8
+        ],
+        "hnr": 24.97,
+        "tilt": -15.412,
+        "mfcc": [
+          -167.47,
+          106.97,
+          -41.18,
+          16.04,
+          -64.4,
+          -27.81,
+          -14.57,
+          2.81,
+          3.77,
+          -25.3,
+          -47.42,
+          2.71,
+          -7.63
+        ],
+        "modulation_roughness_proxy": 0.0693
+      },
+      "scoring": {
+        "component_scores": {
+          "f0": 1.0,
+          "tilt": 0.0,
+          "hnr": 0.0346,
+          "mfcc": 0.9526
+        },
+        "composite_score": 0.6526,
+        "weights": {
+          "f0": 0.267,
+          "tilt": 0.2,
+          "hnr": 0.133,
+          "mfcc": 0.4
+        },
+        "include_formants": false
+      },
+      "signature_version": "0.2.0"
+    },
+    {
+      "file": "/home/adora/narusya-voice/renders/phase1/\u025b_f2_design_1750.wav",
+      "timestamp": "2026-11-09T15:33:56.844768",
+      "features": {
+        "f0": 190.1,
+        "formants": [
+          594.9,
+          1732.3,
+          3075.3,
+          3970.5
+        ],
+        "hnr": 27.85,
+        "tilt": -18.665,
+        "mfcc": [
+          -196.47,
+          115.35,
+          -21.82,
+          31.16,
+          -51.99,
+          -32.26,
+          -44.42,
+          -23.12,
+          16.53,
+          -3.3,
+          -46.78,
+          -3.05,
+          0.85
+        ],
+        "modulation_roughness_proxy": 0.0779
+      },
+      "scoring": {
+        "component_scores": {
+          "f0": 1.0,
+          "tilt": 0.0,
+          "hnr": 0.0066,
+          "mfcc": 0.959
+        },
+        "composite_score": 0.6515,
+        "weights": {
+          "f0": 0.267,
+          "tilt": 0.2,
+          "hnr": 0.133,
+          "mfcc": 0.4
+        },
+        "include_formants": false
+      },
+      "signature_version": "0.2.0"
+    },
+    {
+      "file": "/home/adora/narusya-voice/renders/phase1/\u025b_f2_reference_2050.wav",
+      "timestamp": "2026-11-09T15:33:56.929655",
+      "features": {
+        "f0": 189.9,
+        "formants": [
+          632.0,
+          2062.8,
+          3098.3,
+          4046.1
+        ],
+        "hnr": 25.34,
+        "tilt": -17.472,
+        "mfcc": [
+          -199.43,
+          117.37,
+          -16.25,
+          40.18,
+          -64.17,
+          -46.43,
+          -28.96,
+          -4.7,
+          -0.18,
+          -21.08,
+          -30.37,
+          10.55,
+          -13.42
+        ],
+        "modulation_roughness_proxy": 0.0739
+      },
+      "scoring": {
+        "component_scores": {
+          "f0": 1.0,
+          "tilt": 0.0,
+          "hnr": 0.0285,
+          "mfcc": 0.9562
+        },
+        "composite_score": 0.6532,
+        "weights": {
+          "f0": 0.267,
+          "tilt": 0.2,
+          "hnr": 0.133,
+          "mfcc": 0.4
+        },
+        "include_formants": false
+      },
+      "signature_version": "0.2.0"
     }
   ],
   "comparisons": [
@@ -981,6 +1269,28 @@
       "winner_path": "/home/adora/narusya-voice/renders/phase1/\u00e6_f2_design_1650.wav",
       "margin": 0.0099,
       "timestamp": "2026-11-09T14:50:19.121542"
+    },
+    {
+      "file_a": "/home/adora/narusya-voice/renders/phase1/\u025b_f2_design_1750.wav",
+      "file_b": "/home/adora/narusya-voice/renders/phase1/\u025b_f2_reference_2050.wav",
+      "score_a": 0.6515,
+      "score_b": 0.6532,
+      "winner": "B",
+      "winner_path": "/home/adora/narusya-voice/renders/phase1/\u025b_f2_reference_2050.wav",
+      "margin": 0.0017,
+      "include_formants": false,
+      "timestamp": "2026-11-09T15:33:50.703983"
+    },
+    {
+      "file_a": "/home/adora/narusya-voice/renders/phase1/\u00e6_f2_design_1650.wav",
+      "file_b": "/home/adora/narusya-voice/renders/phase1/\u00e6_f2_reference_1920.wav",
+      "score_a": 0.6566,
+      "score_b": 0.6526,
+      "winner": "A",
+      "winner_path": "/home/adora/narusya-voice/renders/phase1/\u00e6_f2_design_1650.wav",
+      "margin": 0.004,
+      "include_formants": false,
+      "timestamp": "2026-11-09T15:33:55.348108"
     }
   ]
 }

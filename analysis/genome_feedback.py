@@ -16,7 +16,7 @@ import os
 import sys
 
 LOG_PATH = os.path.join(os.path.dirname(__file__), "..", "listening_log.json")
-VOICE_GENOME = "/home/adora/narusya-voice/genome/voice_genome.yaml"
+VOICE_GENOME = None  # set via --voice-dir or env
 
 
 def load_log():
@@ -42,7 +42,6 @@ def analyze_results(log):
         dist = test["perceptual_distance"]
 
         if "front-F2" in name or "f2" in name.lower():
-            # F2 adjustment recommendation
             if winner == "A":
                 recommendations.append({
                     "parameter": "F2 (front vowels)",
@@ -70,6 +69,8 @@ def analyze_results(log):
 
 def main():
     parser = argparse.ArgumentParser(description="Genome feedback from listening results")
+    parser.add_argument("--voice-dir", default=None,
+                        help="Path to VOICE repo (for genome reference)")
     parser.add_argument("--apply", action="store_true", help="Apply recommendations (not yet implemented)")
     args = parser.parse_args()
 
