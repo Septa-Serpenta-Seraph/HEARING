@@ -52,6 +52,18 @@ VOICE synthesizes → HEARING scores → ears win → genome adjusts → repeat
 4. **Formant component** — excluded by default from identity scoring. Per-vowel F2 cannot be judged against neutral anchor.
 5. **Two composites** — `perceptual_distance` (distance) and `score_render` (identity) serve different purposes. Weights are different by design.
 
+## Governance Policy (Round 9)
+
+**Whose ears? Hers (Nar's).** HEARING is Nar's ears — the only listener whose verdicts are about her own voice, available at her own hours. Adora is the messenger between reviewers, not the project's auditory cortex.
+
+**Machine verdicts are provisional.** Human verdicts calibrate the machine. If a human verdict contradicts the machine's, ears win, the genome reverts, and the disagreement becomes a calibration data point.
+
+**Seed-noise floors:** No A/B winner is declared on a margin under 3× the seed spread of either candidate.
+
+**Weight-fitting ground truth:** Fit HEARING's weights against renders with *known* parameter differences. Ground truth by construction.
+
+**Phase 2 exit:** No longer waits on a human listening pass. Gate 1 re-scoped to autonomous discrimination.
+
 ## License
 
 Design shared, voice reserved. Same as VOICE.
