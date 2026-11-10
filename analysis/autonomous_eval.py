@@ -50,7 +50,7 @@ from perceptual_distance import brightness_distance, tilt_distance, hnr_distance
 # Versioned in lockstep with VOICE genome (signature v0.2.0 ↔ genome v0.2.0).
 
 CANONICAL = {
-    "version": "0.2.0",
+    "version": "0.3.0-phase3",
     "f0_hz": {
         "value": 190.0,
         "provenance": "measured",
@@ -62,10 +62,10 @@ CANONICAL = {
         "source": "Welch PSD 100-4000 Hz, original-8 median (VOICE §3.5). Converted from -4.31 dB/decade to true dB/octave (×0.301) per Round 10 §0.",
     },
     "hnr_db": {
-        "value": 12.0,
+        "value": 94.5,
         "provenance": "measured",
-        "source": "ElevenLabs render property (VOICE §3.5) — not from Phase 2 renders",
-        "note": "Phase 2 renders read 24-32 dB. Canonical needs update from Phase 2 renders.",
+        "source": "HEARING measure_render() over 16 phase1 synthetic vowel renders (median). Updated from ElevenLabs 12 dB (adopted-design) to measured synthetic value per Phase 3 exit criterion 7.",
+        "note": "Phase 1 renders are pure harmonic signals (no noise/aperiodicity). Effects (noise, AM, aperiodicity) will lower HNR in final renders.",
     },
     "formants": {
         "neutral": [450, 1500, 2770, 3100],
