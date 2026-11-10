@@ -50,7 +50,7 @@ from perceptual_distance import brightness_distance, tilt_distance, hnr_distance
 # Versioned in lockstep with VOICE genome (signature v0.2.0 ↔ genome v0.2.0).
 
 CANONICAL = {
-    "version": "0.3.0-phase3",
+    "version": "0.3.4-phase3",
     "f0_hz": {
         "value": 190.0,
         "provenance": "measured",
@@ -62,10 +62,16 @@ CANONICAL = {
         "source": "Welch PSD 100-4000 Hz, original-8 median (VOICE §3.5). Converted from -4.31 dB/decade to true dB/octave (×0.301) per Round 10 §0.",
     },
     "hnr_db": {
-        "value": 94.5,
+        "value": 19.1,
         "provenance": "measured",
-        "source": "HEARING measure_render() over 16 phase1 synthetic vowel renders (median). Updated from ElevenLabs 12 dB (adopted-design) to measured synthetic value per Phase 3 exit criterion 7.",
-        "note": "Phase 1 renders are pure harmonic signals (no noise/aperiodicity). Effects (noise, AM, aperiodicity) will lower HNR in final renders.",
+        "source": "HEARING measure_render() over 16 all-on Phase 3 renders (median). Calibrated voice with effort at neutral, AM family on (1.4%), raven grain (-57 dB), ghost-hiss (0.07 dB), aperiodicity, and tilt shaping. Re-derived per Zarza Round 11 §2 (previous 94.5 dB was from clean Phase 1 renders — circular).",
+        "note": "All-on renders: HNR range 13.5-22.1 dB, σ=2.8 dB. Sample-measured reference (ElevenLabs source): 11.9 dB (see hnr_sample_reference below).",
+    },
+    "hnr_sample_reference_db": {
+        "value": 11.9,
+        "provenance": "measured (sample)",
+        "source": "ElevenLabs Nar IVC clone renders (original-8 median, §3).",
+        "note": "Gap between built voice (19.1 dB) and source (11.9 dB) is information: how far the built voice's harmonicity sits from the source renders'.",
     },
     "formants": {
         "neutral": [450, 1500, 2770, 3100],
@@ -186,9 +192,9 @@ def score_render(features, include_formants=False, weights=None):
     tilt_diff = abs(features["tilt"] - CANONICAL["tilt_db_oct"]["value"])
     scores["tilt"] = float(np.exp(-tilt_diff**2 / (2 * 2.0**2)))
 
-    # HNR score (Gaussian, sigma=5 dB — widened per review)
+    # HNR score (Gaussian, sigma=2.8 dB — derived from all-on renders' spread)
     hnr_diff = abs(features["hnr"] - CANONICAL["hnr_db"]["value"])
-    scores["hnr"] = float(np.exp(-hnr_diff**2 / (2 * 5.0**2)))
+    scores["hnr"] = float(np.exp(-hnr_diff**2 / (2 * 2.8**2)))
 
     # MFCC score (cosine similarity, mean-normalized to reduce c0 dominance)
     mfcc_a = np.array(features["mfcc"])
