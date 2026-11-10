@@ -57,9 +57,9 @@ CANONICAL = {
         "source": "original-8 median F0 = 190.9 Hz (VOICE §3.3)",
     },
     "tilt_db_oct": {
-        "value": -4.31,
+        "value": -1.30,
         "provenance": "measured",
-        "source": "Welch PSD 100-4000 Hz, original-8 median (VOICE §3.5)",
+        "source": "Welch PSD 100-4000 Hz, original-8 median (VOICE §3.5). Converted from -4.31 dB/decade to true dB/octave (×0.301) per Round 10 §0.",
     },
     "hnr_db": {
         "value": 12.0,
@@ -125,8 +125,7 @@ def measure_render(path):
     if np.isnan(hnr):
         hnr = 0.0
 
-    # Tilt: dB/octave over 100-4000 Hz (matching VOICE's Welch method)
-    # Uses 10*slope convention to match VOICE's analyze_voice.py
+    # Tilt: true dB/octave over 100-4000 Hz (Round 10: standardized on true dB/oct)
     y, sr = librosa.load(path, sr=16000)
     from scipy import signal as scipy_signal
     freqs, psd = scipy_signal.welch(y, fs=sr, nperseg=1024)
@@ -134,7 +133,7 @@ def measure_render(path):
     log_freqs = np.log10(freqs[mask])
     log_power = np.log10(psd[mask] + 1e-20)
     coeffs = np.polyfit(log_freqs, log_power, 1)
-    tilt = float(coeffs[0] * 10)
+    tilt = float(coeffs[0] * 10 * np.log10(2))  # true dB/octave
 
     # MFCC
     mfcc = librosa.feature.mfcc(y=y, sr=sr, n_mfcc=13).mean(axis=1)
