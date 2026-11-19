@@ -112,6 +112,21 @@ def measure_render(path):
     f0 = call(pitch, "Get mean", 0, 0, "Hertz")
     if np.isnan(f0):
         f0 = 0.0
+    # Round 13 §2.6: the gate and canonical call this a "median" but it was
+    # the MEAN of voiced frames. Expose all three so the statistic is named
+    # truthfully. f0 stays the mean for backward compatibility; f0_median is
+    # the real median of voiced frames.
+    try:
+        # Praat's Pitch has no "Get median" via the call() wrapper. Read the
+        # voiced-frame frequency array directly (0 = unvoiced, filter out).
+        pit = snd.to_pitch(time_step=0.001, pitch_floor=75, pitch_ceiling=600)
+        vals = pit.selected_array["frequency"]
+        clean = vals[np.isfinite(vals) & (vals > 0)]
+        f0_median = float(np.median(clean)) if clean.size else 0.0
+        f0_p05 = float(np.percentile(clean, 5)) if clean.size else 0.0
+        f0_p95 = float(np.percentile(clean, 95)) if clean.size else 0.0
+    except Exception:
+        f0_median = f0_p05 = f0_p95 = 0.0
 
     # Formants (Praat Burg — same as VOICE measurement)
     formant = call(snd, "To Formant (burg)", 0.01, 5, 5500, 0.025, 50)
@@ -152,7 +167,10 @@ def measure_render(path):
     roughness = float(np.mean(mod_spec[mask])) if mask.sum() > 0 else 0.0
 
     return {
-        "f0": round(f0, 1),
+        "f0": round(f0, 1),                    # mean of voiced frames (legacy name)
+        "f0_median": round(f0_median, 1),      # true median of voiced frames
+        "f0_p05": round(f0_p05, 1),
+        "f0_p95": round(f0_p95, 1),
         "formants": [round(f, 1) for f in formants],
         "hnr": round(hnr, 2),
         "tilt": round(tilt, 3),
