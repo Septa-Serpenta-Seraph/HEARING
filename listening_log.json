@@ -132,6 +132,15 @@
       "fix": "Absolute speech-presence gate: F2-band energy (800-3000Hz) >= 2.8% AND spectral entropy >= 4.9. Joint rule calibrated on 14 real-speech and 19 bad-render samples with zero overlap; single-feature thresholds had overlap.",
       "verification": "self-test PASS 14/14 good detected, 18/18 bad rejected (one bad file missing from glob); genome.wav composite now None with invalidation; jo.wav speech present.",
       "effect": "evaluate_render sets composite_score=None and invalidated=... when speech presence fails. Comparative scores can no longer be reported as progress on non-speech."
+    },
+    {
+      "id": "round15-verification-2026-11-19",
+      "timestamp": "2026-11-19T14:30:45.976133",
+      "listener": "narusya",
+      "review": "Zarza Round15 response",
+      "finding": "Verified Zarza peak-gain numbers myself: F1 1630x vs F2 394x vs F3 148x under my normalization. Fixed to unity peak (measured 1.001/1.000/1.000). F2 band on moon 2.24% -> 20.41%; all four golden renders now pass speech-presence gate. Whisper went from empty to speech-shaped words but WER still 1.0 \u2014 Gate 1 still FAIL.",
+      "secondary_levers": "Aspiration noise (wired, level_db -120 OFF) lowered F2 20.4->16.3%, inflated entropy 5.7->7.7; bandwidth x1.3/2/3 lowered F2 20.4->17.7/15.1/14.4%. Both hurt full utterance; rejected by measurement, kept only gain fix.",
+      "ruling": "Structural golden 10/10 = structurally well-formed, never \"10/10 speech\". Gate 1 remains the floor."
     }
   ]
 }
