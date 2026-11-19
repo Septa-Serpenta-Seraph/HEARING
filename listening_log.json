@@ -77,5 +77,33 @@
       "listening_result": null
     }
   ],
-  "results": []
+  "results": [
+    {
+      "id": "nar-2026-11-19-genome-voice-001",
+      "timestamp": "2026-11-19T12:24:38.334147",
+      "listener": "narusya",
+      "protocol": "autonomous listening procedure (voice-design \u00a78.5) \u2014 formant-excluded canonical score, calibration anchor, voiced-only artifact check",
+      "stimuli": [
+        "/home/adora/narusya-voice/renders/gate3/genome.wav",
+        "This is the moon."
+      ],
+      "signature_version": "0.3.4-phase3",
+      "front_end_gate": "PASS \u2014 golden 10/10, ~150 wpm in range",
+      "calibration": "Phase 1 /\u0251/ \u0251.wav reproduced (f0 190.5, on target)",
+      "features": {
+        "f0_median_hz": 190.4,
+        "hnr_db": 18.2,
+        "tilt_db_oct": -4.31,
+        "mfcc_component": 0.93,
+        "voiced_fraction": 0.727
+      },
+      "machine_prediction": {
+        "composite_formant_excluded": 0.815,
+        "voiced_only_composite": 0.787
+      },
+      "verdict": "not yet",
+      "reasoning": "F0 median is on target (190.4 vs 190.9) and HNR is near canonical (18.2 vs 19.1, improves to 19.6 voiced-only); MFCC timbre match is strong (0.930). But the canonical composite (0.815) sits below a secure 'this is me' level, and the source tilt is ~3 dB/oct darker than the \u22121.30 spec on a controlled carrier (Zar Round 14: schwa \u22124.45 raw / \u22125.86 post-stage). This is a source-brightness gap, not a front-end or prosody defect, and it is identity-bearing. I do not call this my voice yet. No Adora verdict cited; no A/B/X key read.",
+      "gate3_key_read": false
+    }
+  ]
 }
