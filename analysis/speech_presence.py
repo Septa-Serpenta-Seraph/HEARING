@@ -7,11 +7,11 @@ or similarity to a canonical signature). The canonical was regenerated from
 the same synthesizer, so unintelligible noise scored 0.793 composite. HEARING
 could not answer the absolute question: "is there a speech signal here?"
 
-This module adds genome-INDEPENDENT absolute measures. The primary gate is
-F2-band energy fraction: real speech puts >=3% of spectral energy in 800-3000
-Hz (the F2/F3 region that carries vowel identity). Rendered noise-with-formants
-puts 1-3%. Measured across 14 real speech samples and 19 bad renders, threshold
-4.0% separates with margin (min GOOD 3.1, max BAD 3.0).
+This module adds genome-INDEPENDENT absolute measures. The gate is a JOINT
+rule: F2-band energy (800-3000 Hz) >= 2.8% AND spectral entropy >= 4.9.
+Either alone overlaps; together they separated 14 real speech from 19 bad
+renders with zero overlap (Round 15 Zarza: false-positives on consonant-heavy
+renders, so treat as necessary-not-sufficient, not a general speech detector).
 
 NOT a perceptual or identity verdict. Only answers: is there enough upper-
 formant energy for the signal to possibly be speech? A FAIL here invalidates
