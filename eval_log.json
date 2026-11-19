@@ -1247,6 +1247,815 @@
         "include_formants": false
       },
       "signature_version": "0.2.0"
+    },
+    {
+      "file": "/home/adora/narusya-voice/renders/phase4/hello,_world_v5.wav",
+      "timestamp": "2026-11-17T22:40:01.567966",
+      "features": {
+        "f0": 188.1,
+        "formants": [
+          376.5,
+          1373.7,
+          2843.1,
+          3596.9
+        ],
+        "hnr": 21.39,
+        "tilt": -6.708,
+        "mfcc": [
+          -221.85,
+          115.29,
+          9.19,
+          39.89,
+          4.24,
+          8.26,
+          -15.39,
+          -34.95,
+          -9.85,
+          2.18,
+          -19.6,
+          -2.59,
+          1.89
+        ],
+        "modulation_roughness_proxy": 0.0979
+      },
+      "scoring": {
+        "component_scores": {
+          "f0": 0.9821,
+          "tilt": 0.0258,
+          "hnr": 0.7157,
+          "mfcc": 0.902
+        },
+        "composite_score": 0.7234,
+        "weights": {
+          "f0": 0.267,
+          "tilt": 0.2,
+          "hnr": 0.133,
+          "mfcc": 0.4
+        },
+        "include_formants": false
+      },
+      "signature_version": "0.3.4-phase3"
+    },
+    {
+      "file": "/home/adora/narusya-voice/renders/phase4/narusya_speaks_with_zarza_v5.wav",
+      "timestamp": "2026-11-17T22:40:03.176864",
+      "features": {
+        "f0": 186.9,
+        "formants": [
+          395.3,
+          1659.6,
+          2974.4,
+          3781.7
+        ],
+        "hnr": 17.17,
+        "tilt": -5.875,
+        "mfcc": [
+          -222.63,
+          48.09,
+          45.61,
+          19.34,
+          11.86,
+          -9.4,
+          -22.85,
+          -28.55,
+          -3.46,
+          4.58,
+          -28.54,
+          -6.95,
+          -0.21
+        ],
+        "modulation_roughness_proxy": 0.1456
+      },
+      "scoring": {
+        "component_scores": {
+          "f0": 0.9531,
+          "tilt": 0.0731,
+          "hnr": 0.7886,
+          "mfcc": 0.9432
+        },
+        "composite_score": 0.7512,
+        "weights": {
+          "f0": 0.267,
+          "tilt": 0.2,
+          "hnr": 0.133,
+          "mfcc": 0.4
+        },
+        "include_formants": false
+      },
+      "signature_version": "0.3.4-phase3"
+    },
+    {
+      "file": "/home/adora/narusya-voice/renders/phase4/she_sees_the_sun_v5.wav",
+      "timestamp": "2026-11-17T22:40:04.685058",
+      "features": {
+        "f0": 182.5,
+        "formants": [
+          509.4,
+          1618.0,
+          2954.6,
+          4001.5
+        ],
+        "hnr": 11.32,
+        "tilt": -3.155,
+        "mfcc": [
+          -195.36,
+          17.95,
+          37.59,
+          10.41,
+          8.95,
+          -3.13,
+          -15.67,
+          -27.68,
+          -14.33,
+          11.14,
+          -10.53,
+          -11.05,
+          -13.37
+        ],
+        "modulation_roughness_proxy": 0.1135
+      },
+      "scoring": {
+        "component_scores": {
+          "f0": 0.7548,
+          "tilt": 0.6504,
+          "hnr": 0.0211,
+          "mfcc": 0.9546
+        },
+        "composite_score": 0.7163,
+        "weights": {
+          "f0": 0.267,
+          "tilt": 0.2,
+          "hnr": 0.133,
+          "mfcc": 0.4
+        },
+        "include_formants": false
+      },
+      "signature_version": "0.3.4-phase3"
+    },
+    {
+      "file": "/home/adora/narusya-voice/renders/phase4/this_is_the_moon_v5.wav",
+      "timestamp": "2026-11-17T22:40:06.203264",
+      "features": {
+        "f0": 181.8,
+        "formants": [
+          379.1,
+          1489.4,
+          2863.0,
+          3544.3
+        ],
+        "hnr": 13.55,
+        "tilt": -3.532,
+        "mfcc": [
+          -176.37,
+          49.24,
+          31.61,
+          20.28,
+          10.28,
+          6.62,
+          -1.64,
+          -17.69,
+          -19.6,
+          -4.02,
+          -19.84,
+          -15.5,
+          -12.77
+        ],
+        "modulation_roughness_proxy": 0.1317
+      },
+      "scoring": {
+        "component_scores": {
+          "f0": 0.7145,
+          "tilt": 0.5365,
+          "hnr": 0.1402,
+          "mfcc": 0.9316
+        },
+        "composite_score": 0.6894,
+        "weights": {
+          "f0": 0.267,
+          "tilt": 0.2,
+          "hnr": 0.133,
+          "mfcc": 0.4
+        },
+        "include_formants": false
+      },
+      "signature_version": "0.3.4-phase3"
+    },
+    {
+      "file": "/home/adora/narusya-voice/renders/phase4/hello,_world_v5.wav",
+      "timestamp": "2026-11-17T22:40:19.217005",
+      "features": {
+        "f0": 188.1,
+        "formants": [
+          376.5,
+          1373.7,
+          2843.1,
+          3596.9
+        ],
+        "hnr": 21.39,
+        "tilt": -6.708,
+        "mfcc": [
+          -221.85,
+          115.29,
+          9.19,
+          39.89,
+          4.24,
+          8.26,
+          -15.39,
+          -34.95,
+          -9.85,
+          2.18,
+          -19.6,
+          -2.59,
+          1.89
+        ],
+        "modulation_roughness_proxy": 0.0979
+      },
+      "scoring": {
+        "component_scores": {
+          "f0": 0.9821,
+          "tilt": 0.0258,
+          "hnr": 0.7157,
+          "mfcc": 0.902
+        },
+        "composite_score": 0.7234,
+        "weights": {
+          "f0": 0.267,
+          "tilt": 0.2,
+          "hnr": 0.133,
+          "mfcc": 0.4
+        },
+        "include_formants": false
+      },
+      "signature_version": "0.3.4-phase3"
+    },
+    {
+      "file": "/home/adora/narusya-voice/renders/phase4/narusya_speaks_with_zarza_v5.wav",
+      "timestamp": "2026-11-17T22:40:19.359196",
+      "features": {
+        "f0": 186.9,
+        "formants": [
+          395.3,
+          1659.6,
+          2974.4,
+          3781.7
+        ],
+        "hnr": 17.17,
+        "tilt": -5.875,
+        "mfcc": [
+          -222.63,
+          48.09,
+          45.61,
+          19.34,
+          11.86,
+          -9.4,
+          -22.85,
+          -28.55,
+          -3.46,
+          4.58,
+          -28.54,
+          -6.95,
+          -0.21
+        ],
+        "modulation_roughness_proxy": 0.1456
+      },
+      "scoring": {
+        "component_scores": {
+          "f0": 0.9531,
+          "tilt": 0.0731,
+          "hnr": 0.7886,
+          "mfcc": 0.9432
+        },
+        "composite_score": 0.7512,
+        "weights": {
+          "f0": 0.267,
+          "tilt": 0.2,
+          "hnr": 0.133,
+          "mfcc": 0.4
+        },
+        "include_formants": false
+      },
+      "signature_version": "0.3.4-phase3"
+    },
+    {
+      "file": "/home/adora/narusya-voice/renders/phase4/she_sees_the_sun_v5.wav",
+      "timestamp": "2026-11-17T22:40:19.453233",
+      "features": {
+        "f0": 182.5,
+        "formants": [
+          509.4,
+          1618.0,
+          2954.6,
+          4001.5
+        ],
+        "hnr": 11.32,
+        "tilt": -3.155,
+        "mfcc": [
+          -195.36,
+          17.95,
+          37.59,
+          10.41,
+          8.95,
+          -3.13,
+          -15.67,
+          -27.68,
+          -14.33,
+          11.14,
+          -10.53,
+          -11.05,
+          -13.37
+        ],
+        "modulation_roughness_proxy": 0.1135
+      },
+      "scoring": {
+        "component_scores": {
+          "f0": 0.7548,
+          "tilt": 0.6504,
+          "hnr": 0.0211,
+          "mfcc": 0.9546
+        },
+        "composite_score": 0.7163,
+        "weights": {
+          "f0": 0.267,
+          "tilt": 0.2,
+          "hnr": 0.133,
+          "mfcc": 0.4
+        },
+        "include_formants": false
+      },
+      "signature_version": "0.3.4-phase3"
+    },
+    {
+      "file": "/home/adora/narusya-voice/renders/phase4/this_is_the_moon_v5.wav",
+      "timestamp": "2026-11-17T22:40:19.540660",
+      "features": {
+        "f0": 181.8,
+        "formants": [
+          379.1,
+          1489.4,
+          2863.0,
+          3544.3
+        ],
+        "hnr": 13.55,
+        "tilt": -3.532,
+        "mfcc": [
+          -176.37,
+          49.24,
+          31.61,
+          20.28,
+          10.28,
+          6.62,
+          -1.64,
+          -17.69,
+          -19.6,
+          -4.02,
+          -19.84,
+          -15.5,
+          -12.77
+        ],
+        "modulation_roughness_proxy": 0.1317
+      },
+      "scoring": {
+        "component_scores": {
+          "f0": 0.7145,
+          "tilt": 0.5365,
+          "hnr": 0.1402,
+          "mfcc": 0.9316
+        },
+        "composite_score": 0.6894,
+        "weights": {
+          "f0": 0.267,
+          "tilt": 0.2,
+          "hnr": 0.133,
+          "mfcc": 0.4
+        },
+        "include_formants": false
+      },
+      "signature_version": "0.3.4-phase3"
+    },
+    {
+      "file": "/home/adora/narusya-voice/renders/gate3/genome.wav",
+      "timestamp": "2026-11-19T12:23:47.908906",
+      "features": {
+        "f0": 193.3,
+        "f0_median": 190.4,
+        "f0_p05": 182.1,
+        "f0_p95": 213.2,
+        "formants": [
+          384.2,
+          1441.3,
+          2671.6,
+          3467.6
+        ],
+        "hnr": 18.17,
+        "tilt": -4.308,
+        "mfcc": [
+          -218.77,
+          76.83,
+          37.48,
+          29.69,
+          7.29,
+          7.32,
+          0.07,
+          -19.28,
+          -17.1,
+          -1.05,
+          -17.11,
+          -14.59,
+          -8.7
+        ],
+        "modulation_roughness_proxy": 0.1357
+      },
+      "scoring": {
+        "component_scores": {
+          "f0": 0.947,
+          "tilt": 0.3227,
+          "hnr": 0.9463,
+          "mfcc": 0.9297
+        },
+        "composite_score": 0.8151,
+        "weights": {
+          "f0": 0.267,
+          "tilt": 0.2,
+          "hnr": 0.133,
+          "mfcc": 0.4
+        },
+        "include_formants": false
+      },
+      "signature_version": "0.3.4-phase3"
+    },
+    {
+      "file": "/home/adora/narusya-voice/renders/gate2_speech/this_is_the_moon.wav",
+      "timestamp": "2026-11-19T12:23:48.082152",
+      "features": {
+        "f0": 193.3,
+        "f0_median": 190.4,
+        "f0_p05": 182.1,
+        "f0_p95": 213.2,
+        "formants": [
+          384.2,
+          1441.3,
+          2671.6,
+          3467.6
+        ],
+        "hnr": 18.17,
+        "tilt": -4.308,
+        "mfcc": [
+          -218.77,
+          76.83,
+          37.48,
+          29.69,
+          7.29,
+          7.32,
+          0.07,
+          -19.28,
+          -17.1,
+          -1.05,
+          -17.11,
+          -14.59,
+          -8.7
+        ],
+        "modulation_roughness_proxy": 0.1357
+      },
+      "scoring": {
+        "component_scores": {
+          "f0": 0.947,
+          "tilt": 0.3227,
+          "hnr": 0.9463,
+          "mfcc": 0.9297
+        },
+        "composite_score": 0.8151,
+        "weights": {
+          "f0": 0.267,
+          "tilt": 0.2,
+          "hnr": 0.133,
+          "mfcc": 0.4
+        },
+        "include_formants": false
+      },
+      "signature_version": "0.3.4-phase3"
+    },
+    {
+      "file": "/home/adora/narusya-voice/renders/phase4/this_is_the_moon_v5.wav",
+      "timestamp": "2026-11-19T12:23:48.195313",
+      "features": {
+        "f0": 181.8,
+        "f0_median": 181.5,
+        "f0_p05": 169.6,
+        "f0_p95": 196.2,
+        "formants": [
+          379.1,
+          1489.4,
+          2863.0,
+          3544.3
+        ],
+        "hnr": 13.55,
+        "tilt": -3.532,
+        "mfcc": [
+          -176.37,
+          49.24,
+          31.61,
+          20.28,
+          10.28,
+          6.62,
+          -1.64,
+          -17.69,
+          -19.6,
+          -4.02,
+          -19.84,
+          -15.5,
+          -12.77
+        ],
+        "modulation_roughness_proxy": 0.1317
+      },
+      "scoring": {
+        "component_scores": {
+          "f0": 0.7145,
+          "tilt": 0.5365,
+          "hnr": 0.1402,
+          "mfcc": 0.9316
+        },
+        "composite_score": 0.6894,
+        "weights": {
+          "f0": 0.267,
+          "tilt": 0.2,
+          "hnr": 0.133,
+          "mfcc": 0.4
+        },
+        "include_formants": false
+      },
+      "signature_version": "0.3.4-phase3"
+    },
+    {
+      "file": "/home/adora/narusya-voice/renders/phase1/\u0251.wav",
+      "timestamp": "2026-11-19T12:24:03.271158",
+      "features": {
+        "f0": 190.5,
+        "f0_median": 190.5,
+        "f0_p05": 190.5,
+        "f0_p95": 190.5,
+        "formants": [
+          824.3,
+          1238.5,
+          2912.3,
+          3560.4
+        ],
+        "hnr": 98.25,
+        "tilt": -4.189,
+        "mfcc": [
+          -251.39,
+          -40.86,
+          -18.56,
+          -6.99,
+          -73.65,
+          12.49,
+          2.56,
+          -28.45,
+          -6.57,
+          19.64,
+          -16.79,
+          -5.39,
+          -15.98
+        ],
+        "modulation_roughness_proxy": 0.0487
+      },
+      "scoring": {
+        "component_scores": {
+          "f0": 0.9988,
+          "tilt": 0.3523,
+          "hnr": 0.0,
+          "mfcc": 0.9852
+        },
+        "composite_score": 0.7312,
+        "weights": {
+          "f0": 0.267,
+          "tilt": 0.2,
+          "hnr": 0.133,
+          "mfcc": 0.4
+        },
+        "include_formants": false
+      },
+      "signature_version": "0.3.4-phase3"
+    },
+    {
+      "file": "/home/adora/.hermes/cache/scratch/tmpnecxbkf0.wav",
+      "timestamp": "2026-11-19T12:24:22.837918",
+      "features": {
+        "f0": 193.3,
+        "f0_median": 190.4,
+        "f0_p05": 182.1,
+        "f0_p95": 213.2,
+        "formants": [
+          366.7,
+          1414.5,
+          2663.1,
+          3420.4
+        ],
+        "hnr": 19.65,
+        "tilt": -5.068,
+        "mfcc": [
+          -225.65,
+          85.37,
+          40.27,
+          30.04,
+          7.09,
+          6.74,
+          0.23,
+          -20.67,
+          -17.74,
+          -1.41,
+          -17.8,
+          -15.48,
+          -8.99
+        ],
+        "modulation_roughness_proxy": 0.1367
+      },
+      "scoring": {
+        "component_scores": {
+          "f0": 0.947,
+          "tilt": 0.1695,
+          "hnr": 0.9809,
+          "mfcc": 0.9246
+        },
+        "composite_score": 0.7871,
+        "weights": {
+          "f0": 0.267,
+          "tilt": 0.2,
+          "hnr": 0.133,
+          "mfcc": 0.4
+        },
+        "include_formants": false
+      },
+      "signature_version": "0.3.4-phase3"
+    },
+    {
+      "file": "/home/adora/.hermes/notes/narusya-genome-voice-sample-2026-11-19.wav",
+      "timestamp": "2026-11-19T12:30:50.618203",
+      "features": {
+        "f0": 186.7,
+        "f0_median": 190.4,
+        "f0_p05": 120.0,
+        "f0_p95": 215.0,
+        "formants": [
+          451.1,
+          1822.9,
+          3081.7,
+          3932.2
+        ],
+        "hnr": 19.82,
+        "tilt": -4.978,
+        "mfcc": [
+          -249.78,
+          91.3,
+          24.3,
+          25.15,
+          -7.34,
+          -0.6,
+          -6.5,
+          -12.98,
+          -0.62,
+          -0.7,
+          -14.8,
+          1.97,
+          0.84
+        ],
+        "modulation_roughness_proxy": 0.4208
+      },
+      "scoring": {
+        "component_scores": {
+          "f0": 0.947,
+          "tilt": 0.1843,
+          "hnr": 0.9675,
+          "mfcc": 0.9366
+        },
+        "composite_score": 0.793,
+        "weights": {
+          "f0": 0.267,
+          "tilt": 0.2,
+          "hnr": 0.133,
+          "mfcc": 0.4
+        },
+        "include_formants": false
+      },
+      "signature_version": "0.3.4-phase3"
+    },
+    {
+      "file": "/home/adora/narusya-voice/renders/gate3/genome.wav",
+      "timestamp": "2026-11-19T12:52:31.743417",
+      "speech_presence": {
+        "f2_band_pct": 2.24,
+        "spectral_entropy": 4.507,
+        "is_speech": false,
+        "f2_threshold_pct": 2.8,
+        "entropy_threshold": 4.9,
+        "comparative_scores_valid": false
+      },
+      "features": {
+        "f0": 193.3,
+        "f0_median": 190.4,
+        "f0_p05": 182.1,
+        "f0_p95": 213.2,
+        "formants": [
+          384.2,
+          1441.3,
+          2671.6,
+          3467.6
+        ],
+        "hnr": 18.17,
+        "tilt": -4.308,
+        "mfcc": [
+          -218.77,
+          76.83,
+          37.48,
+          29.69,
+          7.29,
+          7.32,
+          0.07,
+          -19.28,
+          -17.1,
+          -1.05,
+          -17.11,
+          -14.59,
+          -8.7
+        ],
+        "modulation_roughness_proxy": 0.1357
+      },
+      "scoring": {
+        "component_scores": {
+          "f0": 0.947,
+          "tilt": 0.3227,
+          "hnr": 0.9463,
+          "mfcc": 0.9297
+        },
+        "composite_score": null,
+        "weights": {
+          "f0": 0.267,
+          "tilt": 0.2,
+          "hnr": 0.133,
+          "mfcc": 0.4
+        },
+        "include_formants": false,
+        "invalidated": "absolute speech-presence gate FAILED; comparative scores are not meaningful"
+      },
+      "signature_version": "0.3.4-phase3"
+    },
+    {
+      "file": "/home/adora/.hermes/hermes-agent/tools/neutts_samples/jo.wav",
+      "timestamp": "2026-11-19T12:52:32.877349",
+      "speech_presence": {
+        "f2_band_pct": 26.9,
+        "spectral_entropy": 7.798,
+        "is_speech": true,
+        "f2_threshold_pct": 2.8,
+        "entropy_threshold": 4.9,
+        "comparative_scores_valid": true
+      },
+      "features": {
+        "f0": 233.3,
+        "f0_median": 224.6,
+        "f0_p05": 148.5,
+        "f0_p95": 347.1,
+        "formants": [
+          563.7,
+          1851.1,
+          2968.8,
+          4008.6
+        ],
+        "hnr": 12.77,
+        "tilt": -4.317,
+        "mfcc": [
+          -279.13,
+          61.89,
+          -19.84,
+          18.16,
+          -27.56,
+          -8.06,
+          -23.78,
+          -18.77,
+          -8.43,
+          -11.14,
+          -3.46,
+          -10.41,
+          -4.9
+        ],
+        "modulation_roughness_proxy": 0.1528
+      },
+      "scoring": {
+        "component_scores": {
+          "f0": 0.0001,
+          "tilt": 0.3205,
+          "hnr": 0.0777,
+          "mfcc": 0.9491
+        },
+        "composite_score": 0.4541,
+        "weights": {
+          "f0": 0.267,
+          "tilt": 0.2,
+          "hnr": 0.133,
+          "mfcc": 0.4
+        },
+        "include_formants": false
+      },
+      "signature_version": "0.3.4-phase3"
     }
   ],
   "comparisons": [

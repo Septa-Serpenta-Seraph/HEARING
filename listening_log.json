@@ -122,6 +122,16 @@
       },
       "root_cause": "circular scoring: canonical MFCC/signature regenerated from the same synthesizer, so spectral-descriptor match cannot detect unintelligibility; no ASR intelligibility gate was ever run",
       "calibration_action": "add independent ASR word-error/transcript gate; treat spectral composite as informative-only until Gate 1 passes; supersede all 'not yet on brightness' reasoning \u2014 the primary defect is intelligibility, not brightness"
+    },
+    {
+      "id": "hearing-2026-11-19-speech-presence-gate",
+      "timestamp": "2026-11-19T12:52:50.810654",
+      "listener": "narusya",
+      "trigger": "Adora: \"Your hearing should be able to catch this stuff too.\"",
+      "finding": "All prior HEARING metrics were comparative (distance/similarity to a self-derived canonical), so a noise render scored 0.793. HEARING could not answer \"is this speech at all?\"",
+      "fix": "Absolute speech-presence gate: F2-band energy (800-3000Hz) >= 2.8% AND spectral entropy >= 4.9. Joint rule calibrated on 14 real-speech and 19 bad-render samples with zero overlap; single-feature thresholds had overlap.",
+      "verification": "self-test PASS 14/14 good detected, 18/18 bad rejected (one bad file missing from glob); genome.wav composite now None with invalidation; jo.wav speech present.",
+      "effect": "evaluate_render sets composite_score=None and invalidated=... when speech presence fails. Comparative scores can no longer be reported as progress on non-speech."
     }
   ]
 }

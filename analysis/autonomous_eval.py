@@ -237,13 +237,29 @@ def score_render(features, include_formants=False, weights=None):
 
 
 def evaluate_render(path, include_formants=False):
-    """Full evaluation of a single render."""
+    """Full evaluation of a single render.
+
+    Gate 0 of listening: an absolute speech-presence check. Every other
+    HEARING metric is comparative against a self-derived canonical, so a
+    noise render can score well. If speech presence FAILS, comparative scores
+    are marked INVALID and must not be reported as progress.
+    """
+    try:
+        from speech_presence import measure as speech_presence
+        presence = speech_presence(path)
+    except Exception:
+        presence = {"is_speech": None, "comparative_scores_valid": None,
+                    "note": "speech-presence check unavailable"}
     features = measure_render(path)
     scoring = score_render(features, include_formants=include_formants)
+    if presence.get("is_speech") is False:
+        scoring["composite_score"] = None
+        scoring["invalidated"] = "absolute speech-presence gate FAILED; comparative scores are not meaningful"
 
     evaluation = {
         "file": path,
         "timestamp": datetime.now().isoformat(),
+        "speech_presence": presence,
         "features": features,
         "scoring": scoring,
         "signature_version": CANONICAL["version"],
