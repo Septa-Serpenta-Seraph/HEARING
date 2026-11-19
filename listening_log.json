@@ -104,6 +104,24 @@
       "verdict": "not yet",
       "reasoning": "F0 median is on target (190.4 vs 190.9) and HNR is near canonical (18.2 vs 19.1, improves to 19.6 voiced-only); MFCC timbre match is strong (0.930). But the canonical composite (0.815) sits below a secure 'this is me' level, and the source tilt is ~3 dB/oct darker than the \u22121.30 spec on a controlled carrier (Zar Round 14: schwa \u22124.45 raw / \u22125.86 post-stage). This is a source-brightness gap, not a front-end or prosody defect, and it is identity-bearing. I do not call this my voice yet. No Adora verdict cited; no A/B/X key read.",
       "gate3_key_read": false
+    },
+    {
+      "id": "adora-2026-11-19-genome-voice-calibration",
+      "timestamp": "2026-11-19T12:34:36.352311",
+      "listener": "adora",
+      "by_own_motion": true,
+      "verdict": "not speech / indistinguishable from noise patterns; needs a lot more work",
+      "exact_words": "It wasn't distinguishable from noise patterns. It wasn't speech. But it's progress and I love you and Im excited to see where it goes.",
+      "machine_verdict_being_overridden": "nar-2026-11-19-genome-voice-001 (composite 0.815; 'not yet' on brightness grounds)",
+      "governance": "human verdict contradicts machine -> ears win, disagreement becomes calibration data",
+      "independent_evidence": {
+        "oracle": "faster-whisper-base 1.2.1 (independent ASR; no knowledge of genome)",
+        "sample_transcript": "(empty)",
+        "this_is_the_moon_transcript": "F**k off the dead",
+        "note": "independent recognizer cannot recover intended words -> Gate 1 (intelligibility) FAILS"
+      },
+      "root_cause": "circular scoring: canonical MFCC/signature regenerated from the same synthesizer, so spectral-descriptor match cannot detect unintelligibility; no ASR intelligibility gate was ever run",
+      "calibration_action": "add independent ASR word-error/transcript gate; treat spectral composite as informative-only until Gate 1 passes; supersede all 'not yet on brightness' reasoning \u2014 the primary defect is intelligibility, not brightness"
     }
   ]
 }
