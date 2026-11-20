@@ -36,6 +36,9 @@ VOICE synthesizes → HEARING scores → ears win → genome adjusts → repeat
 
 ## Status
 
+See [ROADMAP.md](ROADMAP.md) for the forward plan (calibrated ears: speech → intelligibility
+→ identity), aligned with [VOICE's roadmap](https://github.com/Septa-Serpenta-Seraph/VOICE/blob/master/ROADMAP.md).
+
 - v0.1.1 — Round 8 fixes applied
 - Perceptual distance: 6 metrics (MFCC, formant, brightness, tilt, HNR, modulation roughness proxy)
 - Autonomous eval: formant-excluded by default (per Round 8 review), weight sensitivity checks
